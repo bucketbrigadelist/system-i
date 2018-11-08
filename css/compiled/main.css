@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Concert+One");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700");
+html, body, div, span, applet, object, iframe, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (max-width: 880px) {
+  .project {
+    width: 44%;
+  }
+
+  .project-page .project-description {
+    width: 100%;
+  }
+  .project-page .project-images {
+    position: static;
+  }
+  .project-page .project-images img {
+    width: 100%;
+  }
+  .project-page .project-images img:not(:first-child) {
+    display: none;
+  }
+
+  .contact .map {
+    margin-top: 0;
+    width: 100%;
+  }
+  .contact .address {
+    width: 100%;
+  }
+
+  .timeline {
+    width: 100%;
+  }
+
+  .skills {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+
+  .social .timeline {
+    width: 40%;
+  }
+
+  header nav {
+    line-height: 1.6em;
+    float: none;
+    display: block;
+    margin: 1.5em 0 2em 0;
+  }
+}
+@media (max-width: 540px) {
+  body {
+    padding: 2em;
+    font-size: 1em;
+  }
+
+  .project-wrapper {
+    margin-top: 2em;
+  }
+
+  .project {
+    width: 95%;
+    margin-bottom: 1.4em;
+  }
+
+  .contact .map {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .social .timeline {
+    width: 100%;
+  }
+}
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  color: #fbae17;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.bounceball {
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  width: 15px;
+}
+.bounceball:before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fbae17;
+  transform-origin: 50%;
+  animation: bounce 500ms alternate infinite ease;
+}
+
+@keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    transform: scaleX(2);
+  }
+  35% {
+    height: 15px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
+html, body, p {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Times, "Times New Roman", serif;
+}
+
+#element {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  cursor: pointer;
+  background-color: blue;
+  border-radius: 50%;
+  left: 100px;
+  top: 100px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,55 @@
+$brand-color-i: 	#22B573;
+$brand-color-ii: 	#009245;
+$brand-color-iii: 	#006837;
+$brand-color-iv: 	#234F38;
+
+$brand-tone-i: 		#808080;
+$brand-tone-ii: 	#B3B3B3;
+$brand-tone-iii: 	#E6E6E6;
+$brand-tone-iv: 	#F2F2F2;
+
+@import "partials/reset.scss";
+@import "partials/font.scss";
+@import "partials/main.scss";
+@import "partials/header.scss";
+// @import "partials/project.scss";
+// @import "partials/curriculum.scss";
+// @import "partials/contact.scss";
+// @import "partials/blog.scss";
+@import "partials/footer.scss";
+@import "partials/mediaqueries.scss";
+
+@import "partials/anim.scss";
+
+html, body, p {
+	// font: $primary-font;
+    font-family :$secondary-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    // font-family: $secondary-font;
+        font-family: $primary-font;
+	// font-family: $quaternary-font;
+}
+
+
+
+// .primary-font {
+// 	font-family: $primary-font;
+// }
+
+// .secondary-font {
+// 	font-family: $secondary-font;
+// }
+
+
+    #element {
+        width:100px; height:100px;
+        position: absolute; cursor: pointer;
+        background-color: blue;
+        border-radius: 50%;
+        left: 100px;
+        top: 100px;
+    }
+
+
