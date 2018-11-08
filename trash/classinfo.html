@@ -1,0 +1,14 @@
+
+<div><span class="info">What about this font</span></div>
+<div><span class="info foo">What about this font</span></div>
+<div><span id="inforesult">&nbsp;</span></div>
+
+<script>
+
+$( ".info" ).click(function() {
+  var fontname = $( this ).css( "font-family" );
+  $( "#inforesult" ).html( "That font is " +
+    fontname);
+});
+
+</script>

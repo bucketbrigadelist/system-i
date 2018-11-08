@@ -168,6 +168,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+.branding h1 {
+  font-size: 200%;
+}
+
+#container-i {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 #element {
   width: 100px;
   height: 100px;
