@@ -1,0 +1,58 @@
+
+
+
+body {
+	background: #226083;
+	color: #FFF;
+}
+
+.search {
+	color: #000;
+}
+
+.container {
+	max-width: 720px;
+	/*background: #226083;*/
+}
+
+.branding {
+	/*background: #226083;*/
+	max-width: 720px;
+	/*margin: 0 auto 0 auto;*/
+	text-align: left;
+}
+
+.branding small{
+	color: #FFF;
+}
+
+.basicTemp {
+	text-align: center;
+}
+
+.simpleTemp {
+	text-align: center;
+}
+
+.superSimpleTemp {
+	text-align: center;
+}
+
+.superSimpleTemp .weatherIcon {
+	font-size: 5rem;
+	padding:2rem;
+	padding-bottom: 1.2rem;
+}
+
+.days .weatherIcon {
+	font-size: 2.5rem;
+	padding:2rem;
+	padding-bottom: 1.2rem;
+}
+
+.dayOfWeek {
+  margin-top: 5rem;
+
+}
+
+

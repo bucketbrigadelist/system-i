@@ -24,12 +24,55 @@ $brand-tone-iv: 	#F2F2F2;
 html, body, p {
 	// font: $primary-font;
     font-family :$secondary-font;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
     // font-family: $primary-font;
-    font-family: $secondary-font;
+    font-family: $tertiary-font;
+    // font-size: 4rem;
+    // font-size: 10vw;
+
+
+    text-transform: uppercase;
+     line-height: 2em;
+    // font-size:20%;
+    // font-family :$secondary-font;
 	// font-family: $quaternary-font;
+}
+
+h1 {
+    font-size: 6em;
+    // line-height: 0.8em;
+        letter-spacing: 0.05em;
+}
+
+h2 {
+    font-size: 5em;
+}
+
+h3 {
+    font-size: 4em;
+}
+h4 {
+    font-size: 3em;
+}
+h5 {
+    font-size: 2.5em;
+}
+h6 {
+    font-size: 2em;
+}
+
+
+
+
+p { 
+    font-size: 1.5em;
+    line-height: 2em;
+    letter-spacing: 0.09em;
+    font-weight:300;
+
 }
 
 

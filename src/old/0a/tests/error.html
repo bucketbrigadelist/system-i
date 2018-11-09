@@ -1,0 +1,39 @@
+<style>
+/*---------------------------
+	Error Page
+----------------------------*/
+.error{
+	opacity: 0;
+	transition: 0.6s;
+	pointer-events: none;
+	position: absolute;
+	left: 0;
+	top: 100px;
+	width: 100%;
+}
+
+.error.visible{
+	opacity: 1;
+}
+
+.error h3{
+	font-size: 40px;
+}
+</style>
+
+
+
+<script type="text/javascript">
+	// Shows the error page.
+	function renderErrorPage(){
+		var page = $('.error');
+		page.addClass('visible');
+	}
+</script>
+
+
+
+
+<div class="error page">
+<h3>Sorry, something went wrong :(</h3>
+</div>

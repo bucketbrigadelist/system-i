@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css/jquery-ui-1.8.18.custom.css"/>
+
+  <!-- BOOTSTRAP -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Weather Icons -->
+  <link rel="stylesheet" href="css/weather-icons.min.css">
+  <!-- <link rel="stylesheet" href="css/weather-icons-wind.min.css"> -->
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">  
+  
+  <!-- Autocomplete Code -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsHIV-J5lIgV0bPZVCijhI-M83kym3Nek&libraries=places&region=in" async defer></script>
+  
+  <!-- app style -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/loader.css">
+
+  <!-- app javacript -->
+  <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body onload="initialize()">
+<div id="loader"></div>
+<div style="display:none;" id="all" class="animate-bottom">
+
+<div class="container">
+
+<nav>
+  <div class="input-group">
+  <span class="input-group-addon">Search Weather Location</span>
+  <input type="text" id="autocomplete" class="form-control" placeholder="City or Zip Code" aria-describedby=id="sizing-addon1">
+  </div>
+
+<!-- CURRENT TEMP DONE --> 
+
+   <div class="row">
+   
+   <div class="col-xs-6 big-branding">
+   <div class="branding h2"> <b>SimpleForecast</b>
+   <br>
+   <small><span id="location">Search Weather Above</span> </small>
+   </div>
+
+   <div class="today-data">
+     <h1 id="nowTemp">29&#8451;</h1>
+     <ul class="h4">
+     <li id="nowDesc"> Cloudy</li>
+     <li id="nowWind">Wind Speed: 10mph</li> 
+     <li id="nowHum">Humidity: 90%</li> 
+     </ul>
+   </div>
+  </div>
+        
+        <div class="col-xs-6 today-temp">
+        <div id="nowIcon" class="today-icon"><img src="spin.svg"></div>
+        <!-- <i class="wi wi-owm-night-800"></i> -->
+        <br>
+       </div>
+    </div>  
+</nav>
+
+
+<div class="fourdays">
+
+ <div class="row" class="weekday">
+    <div class="col-xs-4">
+      <div id="dayName1" class="dayname"><img src="spin.svg"></div>
+    </div>
+    <div class="col-xs-4">
+      <span id="dayIcon1" class="icon"><img src="spin.svg"></span>
+      <span id="dayTemp1" class="temp"><img src="spin.svg"></span>
+    </div>
+    <div class="col-xs-4">
+      <span id="nightIcon1" class="icon"><img src="spin.svg"></span>
+      <span id="nightTemp1" class="temp"><img src="spin.svg"></span>
+    </div>
+  </div> 
+
+
+</div>
+
+<div class="fourdays">
+
+  <div class="row" class="weekday">
+    <div class="col-xs-4">
+      <span id="dayName1" class="dayname"><img src="spin.svg"></span>
+    </div>
+    <div class="col-xs-4">
+      <span id="dayIcon1" class="icon"><img src="spin.svg"></span>
+      <span id="dayTemp1" class="temp"><img src="spin.svg"></span>
+    </div>
+    <div class="col-xs-4">
+      <span id="nightIcon1" class="icon"><img src="spin.svg"></span>
+      <span id="nightTemp1" class="temp"><img src="spin.svg"></span>
+    </div>
+  </div> 
+
+  <div class="row" class="weekday">
+    <div class="col-xs-4">
+      <span id="dayName2" class="dayname"><img src="spin.svg"></span>
+    </div>
+    <div class="col-xs-4">
+      <span id="dayIcon2" class="icon"><img src="spin.svg"></span>
+      <span id="dayTemp2" class="temp"><img src="spin.svg"></span>
+    </div>
+    <div class="col-xs-4">
+      <span id="nightIcon2" class="icon"><img src="spin.svg"></span>
+      <span id="nightTemp2" class="temp"><img src="spin.svg"></span>
+    </div>
+  </div> 
+
+  <div class="row" class="weekday">
+    <div class="col-xs-4">
+      <span id="dayName3" class="dayname"><img src="spin.svg"></span>
+    </div>
+    <div class="col-xs-4">
+      <span id="dayIcon3" class="icon"><img src="spin.svg"></span>
+      <span id="dayTemp3" class="temp"><img src="spin.svg"></span>
+    </div>
+    <div class="col-xs-4">
+      <span id="nightIcon3" class="icon"><img src="spin.svg"></span>
+      <span id="nightTemp3" class="temp"><img src="spin.svg"></span>
+    </div>
+  </div> 
+
+  <div class="row" class="weekday">
+    <div class="col-xs-4">
+      <span id="dayName4" class="dayname"><img src="spin.svg"></span>
+    </div>
+    <div class="col-xs-4">
+      <span id="dayIcon4" class="icon"><img src="spin.svg"></span>
+      <span id="dayTemp4" class="temp"><img src="spin.svg"></span>
+    </div>
+    <div class="col-xs-4">
+      <span id="nightIcon4" class="icon"><img src="spin.svg"></span>
+      <span id="nightTemp4" class="temp"><img src="spin.svg"></span>
+    </div>
+  </div> 
+
+</div> 
+
+<div id="test0"></div>
+<div id="test1"></div>   
+<div id="test2"></div>
+<div id="test3"></div>
+<div id="test4"></div>
+<div id="test5"></div>
+<div id="test6"></div>
+<div id="test7"></div>
+<div id="test8"></div>
+
+</div> 
+ 
+
+</div>
+
+</div>
+</body>
+</html>

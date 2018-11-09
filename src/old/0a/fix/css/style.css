@@ -1,0 +1,149 @@
+body {
+	/*font-family: 'Open Sans', Helvetica, sans-serif;*/
+	font-family: 'Lato', sans-serif;
+
+	/*font-family: Helvetica,sans-serif;*/
+	background: #226083;
+	color: #FFF;
+}
+
+.search {
+	color: #000;
+}
+
+h1 small {
+	color: #FFF;
+}
+
+h1 { 
+font-weight: bold;
+} 
+
+.big-branding h2 { 
+font-weight: bold;
+} 
+
+nav {
+	padding-bottom: 1.1rem;
+	/*border:solid 1px #FFF;*/
+}
+.container {
+	margin-top: 5px;
+	max-width: 720px;
+	/*border: solid 1px #FFF;*/}
+
+.branding {
+	text-align: left;
+}
+
+.big-branding {
+	/*border: solid 1px #FFF;*/
+}
+
+.branding small{
+	color: #FFF;
+}
+
+
+.today-temp {
+	/*border: solid 1px #FFF;*/
+
+	text-align: left;
+}
+
+.today-icon {
+	font-size: 1200%;
+	margin-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+.today-data {
+	/*border: solid 1px #FFF;*/
+}
+
+.today-data h1 {
+	font-size: 500%;
+}
+
+.today-data ul {
+	display: block;
+	padding-left:0;
+	list-style: none;
+	font-weight: normal;
+	line-height: 3rem;
+}
+
+
+/* */
+
+.fourdays {
+	font-weight: bold;
+	font-size: 120%;
+	padding-top: 1rem;
+	/*text-align: right;*/
+	/*border: solid 1px #FFF;*/
+	margin-bottom: 3rem;
+}
+
+.fourdays .dayname{
+	padding-top: 1rem;
+	font-size: 125%;
+	/*font-weight: normal;*/
+	/*border: solid 1px #FFF;*/
+
+}
+
+
+
+.fourdays .temp {
+	/*text-align: right;*/
+	/*display: inline;*/
+	/*border: solid 1px #FFF;*/
+}
+
+.icon, .temp {
+	text-align: left;
+	font-size: 250%;
+	margin-bottom: 3rem;
+	/*border: solid 1px #FFF;*/
+}
+
+/*#dayname1 {
+	font-size: 2re,
+}
+*/
+
+
+
+
+
+/*#dayIcon1 {padding-bottom: 10rem}*/
+
+.basicTemp {
+	text-align: center;
+}
+
+.simpleTemp {
+	text-align: center;
+}
+
+.superSimpleTemp {
+	text-align: center;
+}
+
+.superSimpleTemp .weatherIcon {
+	font-size: 5rem;
+	padding:2rem;
+	padding-bottom: 1.2rem;
+}
+
+.days .weatherIcon {
+	font-size: 2.5rem;
+	padding:2rem;
+	padding-bottom: 1.2rem;
+}
+
+.dayOfWeek {
+  margin-top: 5rem;
+
+}

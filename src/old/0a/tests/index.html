@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+
+  <!-- BOOTSTRAP -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Weather Icons -->
+  <link rel="stylesheet" href="css/weather-icons.css">
+  <link rel="stylesheet" href="css/weather-icons-wind.css">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+  
+  <!-- Autocomplete Code -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsHIV-J5lIgV0bPZVCijhI-M83kym3Nek&libraries=places&region=in" async defer></script>
+  
+  <!-- app style -->
+  <link rel="stylesheet" href="css/jquery-ui-1.8.18.custom.css"/>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- app javacript -->
+  <script type="text/javascript" src="script.js"></script>
+  <!-- <script type="text/javascript" src="tasks.js"></script> -->
+
+
+</script>
+    </head>
+
+    <body onload="initialize()">
+    <!-- <body> -->
+
+    <div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Search Location</span>
+  <input type="text" id="autocomplete" class="form-control" placeholder="City or Zip Code" aria-describedby="basic-addon1">
+</div>
+
+      
+      <div class="branding"><h1>SimpleForecast</h1>
+      
+      <span id="location"><img src="spin.svg"></span> 
+
+      </div>
+
+
+
+      <div class="superSimpleTemp">
+     
+      </div>
+
+<div class="inner">
+
+<div id="day1"><img src="spin.svg"></div>
+<div id="day2"><img src="spin.svg"></div>
+
+<div id="day3"><img src="spin.svg"></div>
+<div id="day4"><img src="spin.svg"></div>
+
+<div id="day5"><img src="spin.svg"></div>
+<div id="day6"><img src="spin.svg"></div>
+
+<div id="day7"><img src="spin.svg"></div>
+<div id="day8"></div>
+
+<!-- <div id="day9"></div>
+<div id="day10"></div> 
+ -->
+</div>
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

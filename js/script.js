@@ -7,10 +7,14 @@ console.log("jQuery v"+jQuery.fn.jquery);
 // });
 
 $(document).ready(function() {
-    $('#header-i').load('includes/header.html');
+
+    // $('#contentstart').load('includes/contentstart.html');
     $('#elements').load('includes/elements.html');
+    $('#media').load('includes/media.html');
     // $('#blocks').load('includes/blocks.html');
     // $('#fonts').load('includes/fonts.html');
     // $('#contentend').load('includes/contentend.html');
-    $('#footer-i').load('includes/footer.html');
+
+
+
 });
