@@ -115,13 +115,86 @@ h3 a { @include blueButton; }
 // }
 
 
-// animations 
+// Variables.
+$tile-bg: #cfcfdf;
 
-.tile {
-  // duration | timing-function | iteration-count | name
-  animation: 1s ease infinite pulse;
+// Styles.
+.tiles {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 330px;
 }
 
+.tile {
+  animation: .3s ease-in-out both fade-in;
+  background: $tile-bg;
+  border-radius: 4px;
+  float: left;
+  height: 75px;
+  margin: 5px;
+  width: 100px;
+}
+
+// Loop from 1-12.
+@for $i from 1 through 12 {
+  .tile {
+    &:nth-child(#{$i}) {
+      
+      // Delay the animation. Delay increases as items loop.
+      animation-delay: $i * (.03s);
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.reload {
+  background: #e2751c;
+  background: linear-gradient(45deg, rgba(#e21c1c,1) 0%, rgba(#e2751c,1) 100%);
+  border-radius: 50px;
+  bottom: 20px;
+  box-shadow: 0 5px 20px rgba(#000, .2);
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  left: 50%;
+  letter-spacing: .075em;
+  padding: 10px 15px;
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+
+// animations 
 
 
 .margin-auto {

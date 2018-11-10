@@ -9,8 +9,12 @@ console.log("jQuery v"+jQuery.fn.jquery);
 $(document).ready(function() {
 
     // $('#contentstart').load('includes/contentstart.html');
-    $('#elements').load('includes/elements.html');
-    $('#media').load('includes/media.html');
+    // $('#mood').load('includes/mood.html');
+    // article
+    $('#article').load('includes/article.html');
+    $('#richlink').load('includes/richlink.html');
+    // $('#elements').load('includes/elements.html');
+    // $('#media').load('includes/media.html');
     // $('#blocks').load('includes/blocks.html');
     // $('#fonts').load('includes/fonts.html');
     // $('#contentend').load('includes/contentend.html');
@@ -18,3 +22,5 @@ $(document).ready(function() {
 
 
 });
+
+
